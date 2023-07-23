@@ -248,15 +248,29 @@ img {
     margin-bottom: 8px;
 }
 
-.icon-section-two {
-    display: block;
-    width: 64px;
+.icons-section-two {
+    position: relative;
+    /*max-width: 264px;*/
+    height: 112px;
+    border-radius: 4px;
+    background-color: var(--cloud-color);
+
+    /*width: 64px;
     height: 64px;
     flex-shrink: 0;
     padding: 24px 100;
     border-radius: 4px;
     background-color: var(--cloud-color);
-    margin-bottom: 8px;
+    margin-bottom: 8px;*/
+}
+
+.icon-two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:64px;
+    height: 64px;
 }
 
 /*-------------------------------------section three pade index-----------------------------------------*/
