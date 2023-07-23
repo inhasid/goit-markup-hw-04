@@ -250,19 +250,11 @@ img {
 
 .icons-section-two {
     position: relative;
-    /*max-width: 264px;*/
     height: 112px;
     border-radius: 4px;
     background-color: var(--cloud-color);
     margin-bottom: 8px;
 
-    /*width: 64px;
-    height: 64px;
-    flex-shrink: 0;
-    padding: 24px 100;
-    border-radius: 4px;
-    background-color: var(--cloud-color);
-    margin-bottom: 8px;*/
 }
 
 .icon-two {
@@ -307,7 +299,6 @@ img {
 
 .item-section-four {
     background-color: var(--white-color);
-    /*width: 264px;*/
     width: calc((100% - 72px) / 4);
     justify-content: center;
     align-items: center;
@@ -316,6 +307,10 @@ img {
 
 .section-four .title {
     line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.section-four .section-text {
     margin-bottom: 8px;
 }
 
