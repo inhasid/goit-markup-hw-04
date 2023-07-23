@@ -193,7 +193,11 @@ img {
     color: var(--white-color);
     padding-top: 188px;
     padding-bottom: 188px;
-
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .container .page-title {
@@ -241,6 +245,16 @@ img {
 
 .section-two .title {
     line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.icon-section-two {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    padding: 24px 100;
+    border-radius: 4px;
+    background-color: var(--cloud-color);
     margin-bottom: 8px;
 }
 
