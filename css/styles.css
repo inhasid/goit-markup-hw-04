@@ -186,17 +186,20 @@ img {
     color: var(--ocean-color);
 }
 
-
-.current::after {
-    display: flex;
+/*.current {
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    width: 48px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+}*/
+.current::after {
+    display: block;
+    width: 100%;
     height: 4px;
     border-radius: 2px;
     background: var(--ocean-color);
+    content: "";
+/*box-shadow: inset 0 -20px var(--ocean-color);*/
 }
 /*-------------------------------------main content page index*-------------------------------------------*/
 /*-----------------------------------------------hero-----------------------------------------------------*/
