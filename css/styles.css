@@ -9,6 +9,7 @@
     --ocean-color: #404BBF;
     --white-color: #FFFFFF;
     --lightslate-colr:#8E8F99;
+    --green-color: #31D0AA;
 }
 
 body {
@@ -309,7 +310,6 @@ img {
     padding-bottom: 120px;
 }
 
-
 .list-section-four {
     display: flex;
     flex-wrap: wrap;
@@ -325,19 +325,6 @@ img {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.link-icon {
-    display: block;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-icon::before {
-    fill: var(--iris-color);
-}
-
-.link-icon::after {
-    fill: var(--ocean-color);
 }
 
 .section-four .title {
@@ -360,6 +347,24 @@ img {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+}
+
+.link-icon {
+    display: flex;
+    fill: var(--cloud-color);
+    background-color: var(--iris-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+    background-color: var(--ocean-color);
 }
 
 .container-employee {
@@ -385,27 +390,40 @@ img {
     text-align: center;
     margin: 0 auto;
 }
-.item-section-five {
+
+/*.item-section-five {
     position: relative;
     border-radius: 4px;
     border: 1px solid var(--lightslate-colr);
-    /*max-width: 168px;*/
     width: calc((100% - 120px) / 6);
     height: 88px;
     flex-shrink: 0;
     margin-bottom: 0 auto ;
     padding: 16px 32px;
+}*/
+
+.link-customers {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    fill: var(--lightslate-colr);
+    border: 1px solid var(--lightslate-colr);
+    border-radius: 4px;
+    padding: 16px 32px;
 }
-    
-    
- .icon-customers {  
-   /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
+
+.link-customers:hover,
+.link-customers:focus {
+    fill: var(--ocean-color);
+    border: 1px solid var(--ocean-color);
+}
+
+.icon-customers {  
     width: 104px;
     height: 56px;
 }
+
+
 
 /*--------------------------------------------footer-------------------------------------------------*/
 
@@ -446,10 +464,23 @@ img {
     margin-top: 16px;
 }
 
-.items-footer {
+.link-footer {
+    display: flex;
+    fill: var(--cloud-color);
+    background-color: var(--iris-color);
+    border-radius: 50%;
     width: 40px;
     height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.link-footer:hover,
+.link-footer:focus {
+    background-color: var(--green-color);
+}    
 /*-------------------------------------------portfolio page----------------------------------------------------*/
 
 .section-portfolio {
