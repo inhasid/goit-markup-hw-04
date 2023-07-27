@@ -10,6 +10,7 @@
     --white-color: #FFFFFF;
     --lightslate-colr:#8E8F99;
     --green-color: #31D0AA;
+    --dairy-color: #FCFCFC;
 }
 
 body {
@@ -166,7 +167,7 @@ img {
     font-weight: 500;
     color: var(--navy-blue);
     display: block;
-    transition: color 250ms cubic-bezier(0.4 0 0.2 1);
+    transition: color, 250ms, cubic-bezier(0.4 0 0.2 1);
 }
 
 .page-link:hover,
@@ -203,6 +204,8 @@ img {
     content: "";
 }
 
+
+
 /*-------------------------------------main content page index*-------------------------------------------*/
 /*-----------------------------------------------hero-----------------------------------------------------*/
 
@@ -237,14 +240,86 @@ img {
     border-radius: 4px;
     padding: 16px 32px;
     margin: 48px auto 0;
-    transition: color 250ms cubic-bezier(0.4 0 0.2 1);
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color, 250ms, cubic-bezier(0.4 0 0.2 1);
 }
 
 .section-one .button:hover,
 .section-one .button:focus {
     background-color: var(--ocean-color);
 }
+  
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+    background: var(--navy-blue, rgba(46, 47, 66, 0.40));
+    z-index: 999;
+}
+
+.modal {
+    width: 408px;
+    height: 584px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--dairy-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+        
+}
+
+.open-modal:hover {
+    opacity: 0.8;
+}
+
+.close-button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    fill: var(--navy-blue);
+    background-color: var(--cornflower-color);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4 0 0.2 1);
+}
+
+.close-button:hover {
+    fill: var(--white-color);
+    background-color: var(--ocean-color);
+    border: transparent;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0%);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 /*--------------------------------------section two pade index-------------------------------------------*/
 .section-two {
     padding-top: 120px;
@@ -274,7 +349,7 @@ img {
     border-radius: 4px;
     background-color: var(--cloud-color);
     margin-bottom: 8px;
-
+    z-index: 1;
 }
 
 .icon-two {
@@ -411,7 +486,7 @@ img {
     border: 1px solid var(--lightslate-colr);
     border-radius: 4px;
     padding: 16px 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-customers:hover,
@@ -502,7 +577,7 @@ img {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--cornflower-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -529,7 +604,7 @@ img {
 
 .link-portfolio {
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-portfolio {
