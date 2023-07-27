@@ -298,6 +298,7 @@ img {
     height: 24px;
     border-radius: 50%;
     cursor: pointer;
+    padding: 0;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4 0 0.2 1);
 }
@@ -590,7 +591,10 @@ img {
     padding: 12px 24px;
     border-radius: 4px;
     border: 1px solid var(--cornflower-color);
-    transition: color, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -617,7 +621,12 @@ img {
 
 .link-portfolio {
     display: block;
-    transition: box-shadow, 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-portfolio {
@@ -650,13 +659,11 @@ img {
     transition: transform 250ms ease-in-out;
     color: var(--cloud-color);
     background: var(--iris-color);
+    padding: 40px 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay p {
-    padding: 40px 32px 164px;
-}
-
-.item-portfolio:hover .overlay {
+.link-portfolio:hover .overlay {
     transform: translateY(0);
 }
 
