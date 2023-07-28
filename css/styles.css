@@ -222,6 +222,7 @@ img {
     color: var(--white-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
@@ -546,7 +547,6 @@ img {
 
 .container-footer{
     display: flex;
-    gap: 120px;
     align-items: baseline;
 }
 
@@ -632,6 +632,11 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+    
+}
+
+.text-portfolio {
+    color: var(--slate-color);
 }
 
 .container-portfolio {
