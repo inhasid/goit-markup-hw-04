@@ -367,15 +367,6 @@ img {
   /*  z-index: 1;*/
 }
 
-/*.icon-two {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 64px;
-    height: 64px;
-}*/
-
 /*-------------------------------------section three pade index-----------------------------------------*/
 .section-three {
     padding-bottom: 120px;
@@ -680,11 +671,4 @@ img {
 .link-portfolio:hover .overlay,
 .link-portfolio:focus .overlay {
     transform: translateY(0);
-}
-
-.item-portfolio:hover,
-.item-portfolio:focus {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
