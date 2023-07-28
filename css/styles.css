@@ -637,7 +637,6 @@ img {
 }
 
 .link-portfolio:hover,
-.link-portfolio:active,
 .link-portfolio:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -679,7 +678,6 @@ img {
 }
 
 .link-portfolio:hover .overlay,
-.link-portfolio:active .overlay,
 .link-portfolio:focus .overlay {
     transform: translateY(0);
 }
